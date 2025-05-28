@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANTEEN</title>
+    <link rel="stylesheet" href="canteen.css">
+</head>
+<body>
+    <h1><u>ANNAPURNESHWARI CANTEEN</u>
+     <h3><u>(OPEN : MON-SAT(9AM to 5PM))</u></h3>   
+    <h2>MENU</h2>
+    <h2><u><label for="">IDLI-20rs:</label></u></h2>
+    <input type="number" name="" id="IDLI">
+    <h2><u><label for="">VADA-15rs:</label></u></h2>
+    <input type="number" name="" id="VADA">
+    <h2><u><label for="">SAMOSA-20rs:</label></u></h2>
+    <input type="number" name="" id="SAMOSA">
+    <h2><u><label for="">PAKODA-20rs:</label></u></h2>
+    <input type="number" name="" id="PAKODA">
+    <h2><u><label for="">POORI-10rs:</label></u></h2>
+    <input type="number" name="" id="POORI">
+    <h2><u><label for="">DOSA-50rs:</label></u></h2>
+    <input type="number" name="" id="DOSA">
+    <button onclick="bill()">SUBMIT</button>
+    <script>
+        function bill(){
+            var IDLI = document.getElementById("IDLI").value;
+            var VADA = document.getElementById("VADA").value;
+            var SAMOSA = document.getElementById("SAMOSA").value;
+            var PAKODA = document.getElementById("PAKODA").value;
+            var POORI = document.getElementById("POORI").value;
+            var DOSA = document.getElementById("DOSA").value;
+
+            var total = IDLI*20 + VADA*15 + SAMOSA*20 + PAKODA*20 + POORI*10 + DOSA*50;
+            alert("The total Bill is Rs. "+total);
+        }
+    </script>
+
+    
+</body>
+</html>

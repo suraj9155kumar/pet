@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <link rel="stylesheet" href="color.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>Color predictor</h1>
+        <button id="colorbutton">Click</button>
+        <p id="colorCode">Click the button to get color</p>
+
+        <script>
+            function color() {
+                const letter = "0123456789ABCDEF";
+                let color = "#";
+                for (let i = 0; i < 6; i++) {
+                    color += letter[Math.floor(Math.random() * 16)]
+                }
+                return color;
+            }
+            document.getElementById("colorbutton").addEventListener("click",function(){
+                const newcolor=color();
+                document.body.style.backgroundColor=newcolor;
+                document.getElementById("colorCode").textContent='Color: '+newcolor;
+            })
+
+
+        </script>
+
+
+
+</body>
+
+</html>

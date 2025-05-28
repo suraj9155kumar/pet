@@ -1,0 +1,19 @@
+h1{
+    background-color: beige;
+    text-align: center;
+    color: blue;
+    text-shadow: 0 0 20px;
+}
+body{
+    color: beige;
+    background-image: url(canteen1.jpeg);
+    background-size: cover;
+    text-decoration: double;
+    backdrop-filter: blur(5px);
+}
+h3{
+    background-color: beige;
+    text-align: center;
+    color: blue;
+    text-shadow: 0 0 20px;
+}

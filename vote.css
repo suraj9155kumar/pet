@@ -1,0 +1,12 @@
+body{
+    background-image: url(india.jpg);
+    background-size: cover;
+}
+h2{
+    color: navy;
+}
+img:hover{
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+    border: 5px solid black;
+}
